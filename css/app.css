@@ -1,0 +1,38 @@
+header {
+	position: relative;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url("../img/mountain.png");
+	background-position: top center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	text-align: center;
+}
+
+.navbar {
+	/*margin: 0px !important;*/
+	/*height: 40px;*/
+	background-color: rgb(255,255,255,0.25);
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+}
+.nav-item {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+header .header-content {
+  width: 50%;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
