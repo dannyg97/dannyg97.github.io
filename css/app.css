@@ -11,11 +11,12 @@ header {
 .about-content {
 	margin-left: 10%;
 	margin-right: 10%;
-	border-left:100px;
-	border-right:100px;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 #about {
+  border-top: 4px solid #75cefc;
 	background-color: #222;
 }
 
@@ -29,9 +30,8 @@ header {
 }
 .container-fluid {
 	/*box-sizing: border-box;*/
-  border-top: 4px solid #75cefc;
   background-color: #222;
-	height: 100vh;
+	height: auto;
 	text-align: center;
 	align-content: center;
 	padding-top: 100px;
@@ -79,4 +79,31 @@ h1 {
 body {
 	font-family: 'Roboto', sans-serif;
 	color: white;
+}
+
+.fixed-top .nav-link {
+	color: white !important;
+}
+
+.fixed-top .navbar-brand {
+	color: white !important;
+}
+
+.scrolled {
+  background-color: #fff !important;
+  transition: color 300ms linear;
+  transition: background-color 300ms linear;
+}
+
+.scrolled .nav-link {
+	color: black !important;
+}
+
+.scrolled .navbar-brand {
+	color: black !important;
+}
+
+.fixed-top{
+	transition: color 300ms linear;
+ 	transition: background-color 300ms linear; 
 }

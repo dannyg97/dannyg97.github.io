@@ -16,7 +16,7 @@
 </head>
 <body>
 	<header class="header_area">
-		<nav class="navbar navbar-expand-sm navbar-light justify-content-end">
+		<nav class="navbar navbar-expand-sm navbar-light fixed-top justify-content-end">
 			<a class="navbar-brand" href="#">DG</a>
 	        <div id="navbarNavDropdown" class="navbar-collapse collapse">
 	            <ul class="navbar-nav mr-auto">
@@ -61,10 +61,10 @@
 	</section>
 
 	<section class="container-fluid" id="skills">
-		<p>Skills and experience</p>
+		<h2>Skills and experience</h1>
 	</section>
 	<section class="container-fluid" id="contact">
-		<p>Contact</p>
+		<h2>Contact</h2>
 	</section>
 
     <!-- Optional JavaScript -->
@@ -78,28 +78,5 @@
   <!-- Typed JS -->
   <script src="js/typed.js"></script>
   <script src="js/app.js"></script>
-  <script>
-    $(document).ready(function (){
-        $("#about-nav").click(function (){
-            $('html, body').animate({
-                scrollTop: $("#about").offset().top
-            }, 1000);
-        });
-    });
-	  $(document).ready(function (){
-        $("#skills-nav").click(function (){
-            $('html, body').animate({
-                scrollTop: $("#skills").offset().top
-            }, 1000);
-        });
-    });
-    $(document).ready(function (){
-        $("#contact-nav").click(function (){
-            $('html, body').animate({
-                scrollTop: $("#contact").offset().top
-            }, 1000);
-        });
-    });
-	</script>
 </body>
 </html>
