@@ -15,9 +15,9 @@
 
 </head>
 <body>
-	<header class="header_area">
+	<header class="header_area" id="home">
 		<nav class="navbar navbar-expand-sm navbar-light fixed-top justify-content-end">
-			<a class="navbar-brand" href="#">DG</a>
+			<a id="home-nav" class="navbar-brand" href="#home">DG</a>
 	        <div id="navbarNavDropdown" class="navbar-collapse collapse">
 	            <ul class="navbar-nav mr-auto">
 	            </ul>
@@ -41,30 +41,118 @@
 		 	<br>
 		 	<p>My name is Danny Guo.</p>
 		 	</h1>
-		 	<hr style="border-color: #75cefc; border-width: 3px; max-width: 140px;">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra fringilla augue, eu tristique augue tempus quis. Vivamus sodales sapien vitae lorem ultrices, id gravida neque viverra. Curabitur eleifend quis ex quis suscipit.</p>
+		 	<hr style="border-color: #75cefc; border-width: 3px; max-width: 10em;">
+			<p>I'm a final year student currently studying Computer Science at UNSW, with a deep passion for teaching others and an uncompromising desire for self growth.</p>
 		</section>
 	</header>
 
 	<!-- Contained fluid to make it expand across the entire web page -->
 	<section class="container-fluid" id="about">
-		<section class="about-content">
+		<section class="content">
 			<h2 style="padding-bottom: 2%">About</h2>
 			<img src="img/self.jpg" style="max-width: 100%; height: auto; border-radius:50%; border:4.5px solid #75cefc">
 			<p style="padding-top: 4%">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit aliquam etiam erat velit scelerisque in dictum non. In nibh mauris cursus mattis molestie a iaculis at. Nisl purus in mollis nunc sed id semper risus. Ultrices dui sapien eget mi proin sed libero. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. In massa tempor nec feugiat nisl. Lacus laoreet non curabitur gravida arcu ac. Egestas dui id ornare arcu odio ut sem nulla. Morbi blandit cursus risus at.
+			Hey there! My name is Danny and I'm one trimester away from earning my degree at UNSW with a Bachelor of Computer Science. My university experience with software development, as well as my extracurricular activities involving hackathons and project management, has given me a strong starting skill set for the software development industry. My passion in this field has led me to seek out learning opportunities in all facets of computer science, with a particular interest in full stack application development.<br>Let me tell you a few things things about myself that my resume doesn't already say!
 			</p>
 			<p>
-			Sagittis id consectetur purus ut. Mi eget mauris pharetra et. Dui vivamus arcu felis bibendum ut tristique et egestas. Cursus euismod quis viverra nibh cras pulvinar. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vel facilisis volutpat est velit. Cum sociis natoque penatibus et magnis dis. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Pellentesque habitant morbi tristique senectus. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Proin nibh nisl condimentum id. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Tristique risus nec feugiat in fermentum posuere.
+			I have a fondness for teaching that was realised through my after-school tutoring experience for <span style="color:#75cefc">BitByBit</span> at Parramatta High School where I taught Python to junior high schoolers. The satisfaction that it gave to teach passionate people on subjects they're passionate about gives me an indescribable feeling of happiness.</p>
+			<p> I've also realised how important it is to be able to take criticism and mold it into a learning experience through my involvement in RSE's STEM Leaders Program, where I worked closely with Accenture as the mock project manager for a group of 4 other individuals to create a digital dashboard hosted on Splunk - a data analytics and visualisation tool - that emulates a physical electronic dashboard through image recognition using Python's OpenCV3 library, which can send API commands to the physical dashboard.
+			</p>
+			<p>
+			When I'm not coding or watching a concert, you'll likely catch me bouldering at Parramatta, hiking around the Blue Mountains, or doodling artworks in the comfort of my home. 
 			</p>
 		</section>
 	</section>
 
 	<section class="container-fluid" id="skills">
-		<h2>Skills and experience</h1>
+		<section class="content">
+			<h2>Skills</h2>
+			<hr style="border-color: #75cefc; border-width: 3px; max-width: 15em;">
+			<h3>Front-end</h3>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful-1/2048/5352_-_HTML5-512.png" style="max-height: 7em">
+					<br>
+					HTML
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful-1/2048/5351_-_CSS3-512.png" style="max-height: 7em">
+					<br>
+					CSS
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png" style="max-height: 7em">
+					<br>
+					JavaScript
+				</div>
+			</div>
+			<hr style="border-color: white; border-width: 3px; max-width: 10em;">
+			<h3>Back-end</h3>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png" style="max-height: 7em">
+					<br>
+					Python
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<img src="https://cdn3.iconfinder.com/data/icons/programming-16/512/programming_6_00001-2-512.png" style="max-height: 7em">					
+					<br>
+					C++
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<img src="https://cdn2.iconfinder.com/data/icons/oxygen/128x128/mimetypes/application-x-perl.png" style="max-height: 7em">					
+					<br>
+					Perl
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<img src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/java-512.png" style="max-height: 7em">
+					<br>					
+					Java
+				</div>
+			</div>
+			<hr style="border-color: white; border-width: 3px; max-width: 10em;">
+			<h3>Personal projects</h3>
+			<p>I've also worked on a few personal projects to polish up my programming skills in my own time outside of university, specifically a Wikia Web Scraper chat bot and this portfolio page. University has also given me a few projects to work on, the most recent one being an implementation of a Euclidean Vector library in C++.<br>As an up and coming software developer, I always strive to write readable and speedy code to develop good habits!
+			</p>
+			<p>
+			You can find all of these projects on my GitHub, or simply click on one of the links below to be redirected to them. 
+			</p>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					Euclidean Vector
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					Wikia Web Scraper
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					Portfolio
+				</div>
+			</div>
+		</section>
 	</section>
 	<section class="container-fluid" id="contact">
-		<h2>Contact</h2>
+		<section class="content">
+			<h2>Contact</h2>
+			<hr style="border-color: black; border-width: 3px; max-width: 15em;">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-512.png" style="max-height: 7em">
+					<br>					
+					LinkedIn
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="https://cdn3.iconfinder.com/data/icons/wpzoom-developer-icon-set/500/09-512.png" style="max-height: 7em">
+					<br>					
+					0435 340 278
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/mail-24-512.png" style="max-height: 7em">
+					danny.guo97@gmail.com
+				</div>
+			</div>
+		</section>
+	<section style="padding-top: 5em">
+		<h2 style="color:black">Thanks for your consideration.</h2>
 	</section>
 
     <!-- Optional JavaScript -->

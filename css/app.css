@@ -8,11 +8,11 @@ header {
 	text-align: center;
 }
 
-.about-content {
-	margin-left: 10%;
-	margin-right: 10%;
-	padding-left: 10%;
-	padding-right: 10%;
+.content {
+	margin-left: 14%;
+	margin-right: 14%;
+	padding-left: 14%;
+	padding-right: 14%;
 }
 
 #about {
@@ -66,8 +66,8 @@ header .header-content {
 }
 
 p {
-	font-family: Arial;
-	font-size: 1.2rem;
+	font-family: 'Segoe UI';
+	font-size: 1rem;
 	text-align: justify;
 	text-align-last: center;
 }

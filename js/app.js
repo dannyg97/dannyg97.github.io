@@ -1,6 +1,6 @@
 $(function(){
     $(".element").typed({
-        strings: ["Hello!", "你好!", "Ciao!", "Olá!", "Bonjour!", "こんにちは!", "Hello!"],
+        strings: ["Hello!", "Ciao!", "Olá!", "Bonjour!", "Hello!"],
         typeSpeed: 40,
         backSpeed: 20,
         loop: false,
@@ -13,6 +13,14 @@ $(function () {
 	  var $nav = $(".fixed-top");
 	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 	});
+});
+
+$(document).ready(function (){
+    $("#home-nav").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#home").offset().top
+        }, 1000);
+    });
 });
 
 $(document).ready(function (){
