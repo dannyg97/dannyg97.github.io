@@ -1,3 +1,7 @@
+$(window).on('load', function(){
+    $('.loader-wrapper').fadeOut("slow");
+});
+
 $(function(){
     $(".element").typed({
         strings: ["Hello!", "Ciao!", "Olá!", "Bonjour!", "Hello!"],
