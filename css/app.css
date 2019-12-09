@@ -1,4 +1,6 @@
-@import "compass";
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   height: 100%;
@@ -14,7 +16,7 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center
 }
@@ -44,21 +46,27 @@ html, body {
 .loader-letter:nth-child(1) {
   animation-delay: 0s;
 }
+
 .loader-letter:nth-child(2) {
   animation-delay: 0.05s;
 }
+
 .loader-letter:nth-child(3) {
   animation-delay: 0.1s;
 }
+
 .loader-letter:nth-child(4) {
   animation-delay: 0.15s;
 }
+
 .loader-letter:nth-child(5) {
   animation-delay: 0.2s;
 }
+
 .loader-letter:nth-child(6) {
   animation-delay: 0.25s;
 }
+
 .loader-letter:nth-child(7) {
   animation-delay: 0.3s;
 }
@@ -81,97 +89,115 @@ html, body {
   }
 }
 
-
-
 header {
-	position: relative;
-	height: 100vh;
-	background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url("../img/mountain.png");
-	background-position: top center;
-	background-size: cover;
-	-webkit-background-size: cover;
-	text-align: center;
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../img/mountain.png");
+  background-position: top center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  text-align: center;
 }
 
 .content {
-	margin-left: 14%;
-	margin-right: 14%;
-	padding-left: 14%;
-	padding-right: 14%;
+  margin-left: 14%;
+  margin-right: 14%;
+  padding-left: 14%;
+  padding-right: 14%;
+}
+
+
+#about .content {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 #about {
   border-top: 4px solid #75cefc;
-	background-color: #222;
+  background-color: #222;
 }
 
 #skills {
-	background-color: #444;
+  background-color: #444;
 }
 
-#contact { 
-	background-color: white; 
-	color: black;
+#contact {
+  background-color: white;
+  color: black;
 }
+
 .container-fluid {
-	/*box-sizing: border-box;*/
+  /*box-sizing: border-box;*/
   background-color: #222;
-	height: auto;
-	text-align: center;
-	align-content: center;
-	padding-top: 100px;
+  height: auto;
+  text-align: center;
+  align-content: center;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .navbar {
-	/*margin: 0px !important;*/
-	/*height: 40px;*/
-	background-color: rgb(255,255,255,0.25);
-	padding-top: 0px !important;
-	padding-bottom: 0px !important;
-	padding-left: 30px !important;
-	padding-right: 30px !important;
+  /*margin: 0px !important;*/
+  /*height: 40px;*/
+  background-color: rgb(255, 255, 255, 0.25);
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
 }
+
 .nav-item {
-	font-size: 20px;
-	text-transform: uppercase;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+a {
+  color: #75cefc;
+}
+
+a:hover {
+  transition: 0.2s;
+  color: #1cb3ff;
 }
 
 header .header-content {
-	/* Change max-width as required*/
-	max-width: 700px;
+  /* Change max-width as required*/
+  max-width: 30em;
   width: 50%;
   color: white;
   margin: 0;
+  padding: 1em;
   position: absolute;
   top: 50%;
   left: 50%;
+  /* background-color: rgb(0, 0, 0, 0.25);  might look better without*/
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 p {
-	font-family: 'Segoe UI';
-	font-size: 1rem;
-	text-align: justify;
-	text-align-last: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+  text-align-last: center;
 }
 
 h1 {
-	font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	color: white;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .fixed-top .nav-link {
-	color: white !important;
+  color: white !important;
 }
 
 .fixed-top .navbar-brand {
-	color: white !important;
+  font-weight: 450;
+  color: white !important;
 }
 
 .scrolled {
@@ -181,14 +207,365 @@ body {
 }
 
 .scrolled .nav-link {
-	color: black !important;
+  color: black !important;
 }
 
 .scrolled .navbar-brand {
-	color: black !important;
+  color: black !important;
 }
 
-.fixed-top{
-	transition: color 300ms linear;
- 	transition: background-color 300ms linear; 
+.fixed-top {
+  transition: color 300ms linear;
+  transition: background-color 300ms linear;
+}
+
+/* 
+
+*/
+
+html.modal-active, body.modal-active {
+  overflow: hidden;
+}
+
+#modal-container {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+}
+
+#modal-container.modal-button {
+  transform: scaleY(0.01) scaleX(0);
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.modal-button .modal-background .modal {
+  transform: scale(0);
+  animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.modal-button.out {
+  transform: scale(1);
+  animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.modal-button.out .modal-background .modal {
+  animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container .modal-background {
+  display: table-cell;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+
+#modal-container .modal-background .modal {
+  background: white;
+  padding: 50px;
+  display: inline-block;
+  border-radius: 7px;
+  font-weight: 300;
+  width: 45%;
+  position: relative;
+  box-shadow: 0 4px 50px grey;
+}
+
+#modal-container .modal-background .modal h2 {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+#modal-container .modal-background .modal p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#modal-container .modal-background .modal .modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#modal-container2 {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+}
+
+#modal-container2.modal-button {
+  transform: scaleY(0.01) scaleX(0);
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container2.modal-button .modal-background .modal {
+  transform: scale(0);
+  animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container2.modal-button.out {
+  transform: scale(1);
+  animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container2.modal-button.out .modal-background .modal {
+  animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container2 .modal-background {
+  display: table-cell;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+
+#modal-container2 .modal-background .modal {
+  background: white;
+  padding: 50px;
+  display: inline-block;
+  border-radius: 7px;
+  font-weight: 300;
+  width: 45%;
+  box-shadow: 0 4px 50px grey;
+  position: relative;
+}
+
+#modal-container2 .modal-background .modal h2 {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+#modal-container2 .modal-background .modal p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#modal-container2 .modal-background .modal .modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#modal-container3 {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+}
+
+#modal-container3.modal-button {
+  transform: scaleY(0.01) scaleX(0);
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container3.modal-button .modal-background .modal {
+  transform: scale(0);
+  animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container3.modal-button.out {
+  transform: scale(1);
+  animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container3.modal-button.out .modal-background .modal {
+  animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container3 .modal-background {
+  display: table-cell;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+
+#modal-container3 .modal-background .modal {
+  background: white;
+  padding: 50px;
+  display: inline-block;
+  border-radius: 7px;
+  box-shadow: 0 4px 50px grey;
+  font-weight: 300;
+  width: 45%;
+  position: relative;
+}
+
+#modal-container3 .modal-background .modal h2 {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+#modal-container3 .modal-background .modal p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#modal-container3 .modal-background .modal .modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#modal-container4 {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+}
+
+#modal-container4.modal-button {
+  transform: scaleY(0.01) scaleX(0);
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container4.modal-button .modal-background .modal {
+  transform: scale(0);
+  animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container4.modal-button.out {
+  transform: scale(1);
+  animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container4.modal-button.out .modal-background .modal {
+  animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container4 .modal-background {
+  display: table-cell;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+
+#modal-container4 .modal-background .modal {
+  background: white;
+  padding: 50px;
+  display: inline-block;
+  border-radius: 7px;
+  box-shadow: 0 4px 50px grey;
+  font-weight: 300;
+  width: 45%;
+  position: relative;
+}
+
+#modal-container4 .modal-background .modal h2 {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+#modal-container4 .modal-background .modal p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#modal-container4 .modal-background .modal .modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+.content .button-row .buttons {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.languages {
+  font-size: 10px;
+  font-style: italic;
+}
+
+.content .button-row .buttons .button {
+  width: 300px;
+  transition: all .2s ease-in-out;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 18px;
+  background-color: #efefef;
+  border-radius: 7px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.content .button-row .buttons .button:hover {
+  transform: scale(1.025);
+  
+  background: #75cefc;
+}
+
+@keyframes unfoldIn {
+  0% {
+    transform: scaleY(0.005) scaleX(0);
+  }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes unfoldOut {
+  0% {
+    transform: scaleY(1) scaleX(1);
+  }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(0.005) scaleX(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
