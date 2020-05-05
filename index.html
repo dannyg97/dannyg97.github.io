@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Danny Guo</title>
+
+
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Animations, format, and layout helpers -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://kit.fontawesome.com/8747ed346d.js" crossorigin="anonymous"></script>
+
+
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="animated fadeInDown" style="animation-iteration-count: 1;animation-duration: 570ms;">
+            <div class="row justify-content-center header-row" style="margin: 0 auto">
+                <div class="col">
+                    <a href="#home" id="home-button" class="header-button">
+                        Home
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#about" id="about-button" class="header-button">
+                        About
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#skills" id="skills-button" class="header-button">
+                        Skills
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#projects" id="projects-button" class="header-button">
+                        Projects
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#contact" id="contact-button" class="header-button">
+                        Contact
+                    </a>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <div id="main">
+            <section id="home" class="active">
+                <img src="./assets/self.jpg" class="animated fadeInDown"
+                    style="animation-iteration-count: 1;animation-delay: 500ms; padding: 1em 0; z-index:1">
+                <div class="animated fadeInDown"
+                    style="animation-iteration-count: 1;animation-delay: 900ms; z-index: 0">
+                    <h1>Danny Guo</h1>
+                    <hr style="width: 10%">
+                    <p class="home-outline">Graduate software developer</p>
+                    
+                </div>
+            </section>
+            <section id="about" class="inactive" style="display:none">
+                Hey there! My name is Danny and I'm one trimester away from earning my degree at UNSW with a Bachelor of
+                Computer Science. My university experience with software development, as well as my extracurricular
+                activities involving hackathons and project management, has given me a strong starting skill set for the
+                software development industry. My passion in this field has led me to seek out learning opportunities in
+                all
+                facets of computer science, with a particular interest in full stack application development.
+                <br><br>
+                I previously taught for <a href="https://bitbybiteducation.com.au/">BitByBit</a> where I taught Python to junior
+                high schoolers. Later on in the role, I also taught basic web development fundamentals, including HTML, CSS and
+                JavaScript. I've recently finished an internship as a Full Stack Developer with <a href="https://www.geckoonline.com.au/">Gecko</a>, 
+                where I implemented quality of life functionality for customers, and acquired applied experience working in an agile environment.
+                <br><br>
+                Currently, I'm laser focused on learning React and NodeJS to create dynamic web pages. I've recently finished a chat 
+                application, although I'm planning on building on top of it to craft a multiplayer table-top game using the same logic for 
+                user-to-user communication.
+                <br><br>
+                When I'm not coding, you'll likely catch me bouldering, hiking around the Blue Mountains, or brushing up on my drawing skills!
+                <br><br>
+                <a href="./assets/Danny Guo Graduate.pdf">
+                    <button type="button" id="resume-button">Resume</button>
+                </a>
+            </section>
+            <section id="skills" class="inactive" style="display:none">
+                Front-end: HTML, CSS, JavaScript, PHP,
+                <br>
+                Back-end: Python, C++, Shell
+                <br>
+                Frameworks and tools: Splunk, AWS, Laravel, Bootstrap, GitHub/BitBucket, JIRA, Flutter, MySQL, Google Lighthouse
+            </section>
+            <section id="projects" class="inactive" style="display:none">
+                <p class="animated fadeInDown">
+                    <b>Wikia Discord Chat Bot</b>:
+                    A web scraper that uses a Python API wrapper for Discord to create a rest API that conforms to the
+                    Discord schema. The chat bot responds to user commands and scrapes the relevant content from a Wikia
+                    article; the web scraper uses BS4 to extract relevant key metrics from wiki pages.
+                </p>
+                <p class="animated fadeInDown" style="animation-delay: 300ms">
+                    <b>Portfolio</b>:
+                    Designed a website to showcase personal achievements using Adobe XD,
+                    which was then coded from the ground up to gain experience with front-end development and to broaden
+                    personal skillset. Utilises Bootstrap4 to improve design and layout of the webpage, as well as
+                    jQuery for responsive animations.
+                </p>
+                <p class="animated fadeInDown" style="animation-delay: 600ms">
+                    <b>Hopebox</b>:
+                    Worked as the main UX designer for a cross-platform mobile application that focuses on the tracking
+                    and improvement of mental health. Served as my introduction to mobile application development (which
+                    I ended up finding super fun), and also served as an introduction to proper Agile methodologies
+                    (scrums, taskboards, user stories, etc). 
+                    <br>
+                    Used Flutter's widget-centric devkit to develop the application.
+                </p>
+                <p class="animated fadeInDown" style="animation-delay: 900ms">
+                    <b>Euclidean Vector Library</b>:
+                    A full implementation of Euclidean Vector, including constructors, destructors, methods, and
+                    operators. Features include calculating the addition, subtraction, multiplication, division of
+                    multiple
+                    vectors, as well as finding their Euclidean Norm and their corresponding Unit Vector.
+                    <br>
+                    Rigorous unit testing was performed on each function to ensure correctness and reliability using
+                    C++'s catch2 testing framework.
+                </p>
+            </section>
+            <section id="contact" class="inactive" style="display:none">
+                If you have any questions, please don't hesitate to connect with me on LinkedIn, or shoot me an email over at <a href="mailto:danny.guo97@gmail.com">danny.guo97@gmail.com</a>!
+            </section>
+        </div>
+        <footer class="animated fadeInDown" style="animation-iteration-count: 1;animation-delay: 1300ms;">
+            <hr>
+            <div class="row" style="justify-content: center !important; width: 50%; margin: 0 auto">
+                <a href="https://www.linkedin.com/in/dannyg97/" class="footer-icon" target="_blank">
+                    <div class="col-xs-4 mr-4">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </a>
+                <a href="https://github.com/dannyg97/" class="footer-icon" target="_blank">
+                    <div class="col-xs-4">
+                        <i class="fab fa-github"></i>
+                    </div>
+                </a>
+                <a href="mailto:danny.guo97@gmail.com" class="footer-icon">
+                    <div class="col-xs-4 ml-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
