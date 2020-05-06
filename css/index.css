@@ -60,6 +60,9 @@ img {
     transform: translate(-50%, -50%);
 }
 
+.active {
+    overflow: hidden;
+}
 #main {
     min-height: auto;
     transition: all 1s;
