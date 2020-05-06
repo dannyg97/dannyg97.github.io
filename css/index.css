@@ -3,6 +3,10 @@ html, body {
     margin: 0;
 }
 
+p {
+    font-family: Roboto;
+}
+
 hr {
     border: 0;
     border-top: 1.1px solid rgb(189, 189, 189) !important;
